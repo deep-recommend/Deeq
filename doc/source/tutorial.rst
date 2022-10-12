@@ -5,8 +5,8 @@ Engligh and Japanese tutorials are available.
 
 English
 
-https://github.com/Blueqat/Blueqat-tutorials
+https://github.com/Qing/Qing-tutorials
 
 Japanese
 
-https://github.com/Blueqat/Blueqat-tutorials/tree/master/tutorial-ja
+https://github.com/Qing/Qing-tutorials/tree/master/tutorial-ja

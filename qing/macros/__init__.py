@@ -5,11 +5,11 @@ The module provides builtin macros."""
 import math
 from typing import Any, Sequence, Optional
 
-from blueqat import Circuit
-from blueqat.decorators import circuitmacro
-from blueqat.utils import calc_u_params, gen_gray_controls, sqrt_2x2_matrix
+from qing import Circuit
+from qing.decorators import circuitmacro
+from qing.utils import calc_u_params, gen_gray_controls, sqrt_2x2_matrix
 
-from blueqat.gate import UGate
+from qing.gate import UGate
 
 
 @circuitmacro

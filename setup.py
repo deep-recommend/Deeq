@@ -3,21 +3,21 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("blueqat/_version.py", "r", encoding="utf-8") as f:
+with open("qing/_version.py", "r", encoding="utf-8") as f:
     exec(f.read())
 
 with open("requirements.txt", "r", encoding="utf-8") as f:
     install_requires = list(map(str.strip, f))
 
 setuptools.setup(
-    name = "blueqat",
+    name = "qing",
     version=__version__,
-    author="The Blueqat Developers",
-    author_email="info@blueqat.com",
+    author="The Qing Developers",
+    author_email="info@qing.com",
     description="Quantum Computer Library for Everyone",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Blueqat/Blueqat",
+    url="https://github.com/Qing/Qing",
     license="Apache 2",
     packages=setuptools.find_packages(),
     install_requires=install_requires,

@@ -1,4 +1,4 @@
-# Copyright 2019 The Blueqat Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@ from collections import Counter
 import pytest
 import numpy as np
 
-from blueqat import Circuit, BlueqatGlobalSetting
-from blueqat.backends.onequbitgate_decomposer import u_decomposer
-from blueqat.utils import ignore_global_phase
+from qing import Circuit, QingGlobalSetting
+from qing.backends.onequbitgate_decomposer import u_decomposer
+from qing.utils import ignore_global_phase
 
 EPS = 1e-16
 
@@ -77,14 +77,14 @@ def test_cx2(backend):
 
 
 def test_cx3(backend):
-    '''Refer issues #76 (https://github.com/Blueqat/Blueqat/issues/76)'''
+    '''Refer issues #76 (https://github.com/Qing/Qing/issues/76)'''
     c = Circuit().z[2].x[0].cx[0, 1]
     assert np.allclose(c.run(backend=backend),
                        np.array([0., 0., 0., 1., 0., 0., 0., 0.]))
 
 
 def test_cx4(backend):
-    '''Refer issues #76 (https://github.com/Blueqat/Blueqat/issues/76)'''
+    '''Refer issues #76 (https://github.com/Qing/Qing/issues/76)'''
     c = Circuit(4).x[0].cx[0, 1]
     result = np.zeros(16)
     result[3] = 1.0
@@ -92,7 +92,7 @@ def test_cx4(backend):
 
 
 def test_cx5(backend):
-    '''Refer issues #76 (https://github.com/Blueqat/Blueqat/issues/76)'''
+    '''Refer issues #76 (https://github.com/Qing/Qing/issues/76)'''
     c = Circuit(4).x[0].cx[0, 2].cx[0, 1]
     result = np.zeros(16)
     result[7] = 1.0
@@ -100,7 +100,7 @@ def test_cx5(backend):
 
 
 def test_cx6(backend):
-    '''Refer issues #76 (https://github.com/Blueqat/Blueqat/issues/76)'''
+    '''Refer issues #76 (https://github.com/Qing/Qing/issues/76)'''
     c = Circuit().x[0].cx[0, 3].cx[3, 1]
     result = np.zeros(16)
     result[11] = 1.0
@@ -498,16 +498,16 @@ def test_switch_backend1():
     c = Circuit().x[0].h[0]
     assert np.array_equal(c.run(), c.run(backend="numpy"))
 
-    BlueqatGlobalSetting.set_default_backend("qasm_output")
+    QingGlobalSetting.set_default_backend("qasm_output")
     assert c.run() == c.to_qasm()
 
     # Different instance of QasmOutputBackend is used.
     # Lhs is owned by Circuit, rhs is passed as argument. But in this case same result.
-    from blueqat.backends.qasm_output_backend import QasmOutputBackend
+    from qing.backends.qasm_output_backend import QasmOutputBackend
     assert c.run(output_prologue=False) == c.run(False,
                                                  backend=QasmOutputBackend())
 
-    BlueqatGlobalSetting.set_default_backend("numpy")
+    QingGlobalSetting.set_default_backend("numpy")
     assert c.run(shots=5) == c.run_with_numpy(shots=5)
 
 
@@ -515,11 +515,11 @@ def test_macro():
     def macro(c, i):
         return c.h[i]
 
-    BlueqatGlobalSetting.register_macro('foo', macro)
+    QingGlobalSetting.register_macro('foo', macro)
     try:
         assert np.allclose(Circuit().foo(1).run(), Circuit().h[1].run())
     finally:
-        BlueqatGlobalSetting.unregister_macro('foo')
+        QingGlobalSetting.unregister_macro('foo')
 
 
 @pytest.mark.parametrize('pair', [

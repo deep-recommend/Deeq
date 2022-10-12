@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, MDR Inc.
-# This file is distributed under the same license as the Blueqat package.
+# This file is distributed under the same license as the Qing package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Blueqat \n"
+"Project-Id-Version: Qing \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 16:11+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -21,6 +21,6 @@ msgid "Release Note"
 msgstr "リリースノート"
 
 #: ../../source/release_note.rst:4
-msgid "Blueqat is updated freqently, so we'll introduce typical releases here."
-msgstr "Blueqatは頻繁にアップデートしているので、その中から代表的なリリースについて、今後ここにリストアップしていきます。"
+msgid "Qing is updated freqently, so we'll introduce typical releases here."
+msgstr "Qingは頻繁にアップデートしているので、その中から代表的なリリースについて、今後ここにリストアップしていきます。"
 

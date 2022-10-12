@@ -1,6 +1,6 @@
 GitHub
 ======
 
-Blueqat's GitHub repository is here:
+Qing's GitHub repository is here:
 
-https://github.com/Blueqat/Blueqat
+https://github.com/Qing/Qing

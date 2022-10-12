@@ -1,45 +1,45 @@
-blueqat package
+qing package
 ===============
 
 Submodules
 ----------
 
-blueqat.circuit module
+qing.circuit module
 ----------------------
 
-.. automodule:: blueqat.circuit
+.. automodule:: qing.circuit
     :members:
     :undoc-members:
     :show-inheritance:
 
-blueqat.gate module
+qing.gate module
 -------------------
 
-.. automodule:: blueqat.gate
+.. automodule:: qing.gate
     :members:
     :undoc-members:
     :show-inheritance:
 
-blueqat.pauli module
+qing.pauli module
 --------------------
 
-.. automodule:: blueqat.pauli
+.. automodule:: qing.pauli
     :members:
     :undoc-members:
     :show-inheritance:
 
-blueqat.vqe module
+qing.vqe module
 ------------------
 
-.. automodule:: blueqat.vqe
+.. automodule:: qing.vqe
     :members:
     :undoc-members:
     :show-inheritance:
 
-blueqat.wq module
+qing.wq module
 ------------------
 
-.. automodule:: blueqat.wq
+.. automodule:: qing.wq
     :members:
     :undoc-members:
     :show-inheritance:
@@ -47,7 +47,7 @@ blueqat.wq module
 Module contents
 ---------------
 
-.. automodule:: blueqat
+.. automodule:: qing
     :members:
     :undoc-members:
     :show-inheritance:

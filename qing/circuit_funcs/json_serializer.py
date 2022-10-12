@@ -1,13 +1,13 @@
 """Defines JSON serializer and deserializer."""
 import typing
-from blueqat import Circuit
+from qing import Circuit
 
 from ..gateset import create
 from .flatten import flatten
 
-from blueqat.gate import Measurement, Operation
+from qing.gate import Measurement, Operation
 
-SCHEMA_NAME = 'blueqat-circuit'
+SCHEMA_NAME = 'qing-circuit'
 AVAILABLE_SCHEMA_VERSIONS = ["1", "2"]
 LATEST_SCHEMA_VERSION = "2"
 

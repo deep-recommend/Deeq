@@ -1,4 +1,4 @@
-# Copyright 2019 The Blueqat Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
 
 import types
 import pytest
-from blueqat import (
+from qing import (
     Circuit,
 )
-from blueqat.vqe import (
+from qing.vqe import (
     VqeResult,
     non_sampling_sampler,
     expect,

@@ -1,4 +1,4 @@
-# Copyright 2019 The Blueqat Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 from itertools import chain
 import pytest
-from blueqat.gate import slicing
+from qing.gate import slicing
 
 class _GetItem:
     def __getitem__(self, args):

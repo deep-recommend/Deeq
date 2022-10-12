@@ -1,8 +1,8 @@
 import json
 import numpy as np
-from blueqat import Circuit
-from blueqat.circuit_funcs.json_serializer import serialize, deserialize
-from blueqat.circuit_funcs.flatten import flatten
+from qing import Circuit
+from qing.circuit_funcs.json_serializer import serialize, deserialize
+from qing.circuit_funcs.flatten import flatten
 
 
 def test_json_dump_load():
@@ -34,7 +34,7 @@ def test_serialize():
     d = serialize(c)
     assert d == {
         'schema': {
-            'name': 'blueqat-circuit',
+            'name': 'qing-circuit',
             'version': '2'
         },
         'n_qubits': 3,
@@ -82,7 +82,7 @@ def test_serialize():
 def test_deserialize():
     """Testing deserialize result. This JSON may changed in the future."""
     s = """{
-    "schema": {"name": "blueqat-circuit", "version": "1"},
+    "schema": {"name": "qing-circuit", "version": "1"},
     "n_qubits": 3,
     "ops": [
       {"name": "phase", "targets": [0], "params": [0.2]},
@@ -101,7 +101,7 @@ def test_deserialize():
 def test_deserialize_unflatten():
     """Testing deserialize unflatten JSON file."""
     s = """{
-    "schema": {"name": "blueqat-circuit", "version": "1"},
+    "schema": {"name": "qing-circuit", "version": "1"},
     "n_qubits": 3,
     "ops": [
       {"name": "phase", "targets": [0, 2], "params": [0.2]},
@@ -120,7 +120,7 @@ def test_serializeV2():
     d = serialize(c)
     assert d == {
         'schema': {
-            'name': 'blueqat-circuit',
+            'name': 'qing-circuit',
             'version': '2'
         },
         'n_qubits': 2,
@@ -156,7 +156,7 @@ def test_serializeV2():
 def test_deserializeV1():
     """Testing deserialize result. This JSON may changed in the future."""
     s = """{
-    "schema": {"name": "blueqat-circuit", "version": "1"},
+    "schema": {"name": "qing-circuit", "version": "1"},
     "n_qubits": 3,
     "ops": [
       {"name": "phase", "targets": [0], "params": [0.2]},

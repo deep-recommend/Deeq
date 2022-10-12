@@ -1,4 +1,4 @@
-# Copyright 2019 The Blueqat Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,8 +15,8 @@
 import pickle
 import pytest
 import numpy as np
-from blueqat import Circuit, pauli
-from blueqat.pauli import *
+from qing import Circuit, pauli
+from qing.pauli import *
 
 def test_equality_identity_matrix():
     assert I == I()

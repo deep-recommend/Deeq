@@ -1,4 +1,4 @@
-# Copyright 2019 The Blueqat Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -513,7 +513,7 @@ def _check_and_transform_initial(initial: np.ndarray,
 
 
 class NumPyBackend(Backend):
-    """Simulator backend which uses numpy. This backend is Blueqat's default backend."""
+    """Simulator backend which uses numpy. This backend is Qing's default backend."""
     __return_type: Dict[str, Callable[[_NumPyBackendContext], Any]] = {
         "statevector": lambda ctx: ctx.qubits,
         "shots": lambda ctx: ctx.shots_result,

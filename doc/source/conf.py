@@ -20,9 +20,9 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Blueqat'
-copyright = '2018, The Blueqat Developers'
-author = 'The Blueqat Developers'
+project = 'Qing'
+copyright = '2018, The Qing Developers'
+author = 'The Qing Developers'
 
 # The short X.Y version
 version = ''
@@ -105,7 +105,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Blueqatdoc'
+htmlhelp_basename = 'Qingdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -132,7 +132,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Blueqat.tex', 'Blueqat Documentation',
+    (master_doc, 'Qing.tex', 'Qing Documentation',
      'MDR Inc.', 'manual'),
 ]
 
@@ -142,7 +142,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'blueqat', 'Blueqat Documentation',
+    (master_doc, 'qing', 'Qing Documentation',
      [author], 1)
 ]
 
@@ -153,8 +153,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Blueqat', 'Blueqat Documentation',
-     author, 'Blueqat', 'One line description of project.',
+    (master_doc, 'Qing', 'Qing Documentation',
+     author, 'Qing', 'One line description of project.',
      'Miscellaneous'),
 ]
 
