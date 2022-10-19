@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Queen Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from .circuit import Circuit, QingGlobalSetting
+from .circuit import Circuit, QueenGlobalSetting
 from .decorators import circuitmacro
 from . import pauli
 from . import utils
 from . import vqe
 from ._version import __version__
 
-__all__ = ["pauli", "utils", "vqe", "circuitmacro", "Circuit", "QingGlobalSetting"]
+__all__ = ["pauli", "utils", "vqe", "circuitmacro", "Circuit", "QueenGlobalSetting"]

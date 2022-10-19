@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Queen Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ import numpy as np
 from sympy import eye, zeros, symbols, simplify, sin, cos, exp, pi, sqrt, I, Matrix, nfloat
 from sympy.physics.quantum import TensorProduct
 
-from qing import Circuit
+from queen import Circuit
 
 def test_sympy_backend_for_one_qubit_gate():
     E = eye(2)

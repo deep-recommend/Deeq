@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Queen Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -301,7 +301,7 @@ def get_qiskit_sampler(backend, **execute_kwargs):
         import qiskit
     except ImportError:
         raise ImportError(
-            "qing.vqe.get_qiskit_sampler() requires qiskit. Please install before call this function."
+            "queen.vqe.get_qiskit_sampler() requires qiskit. Please install before call this function."
         )
     try:
         shots = execute_kwargs['shots']

@@ -1,45 +1,45 @@
-qing package
+queen package
 ===============
 
 Submodules
 ----------
 
-qing.circuit module
+queen.circuit module
 ----------------------
 
-.. automodule:: qing.circuit
+.. automodule:: queen.circuit
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.gate module
+queen.gate module
 -------------------
 
-.. automodule:: qing.gate
+.. automodule:: queen.gate
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.pauli module
+queen.pauli module
 --------------------
 
-.. automodule:: qing.pauli
+.. automodule:: queen.pauli
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.vqe module
+queen.vqe module
 ------------------
 
-.. automodule:: qing.vqe
+.. automodule:: queen.vqe
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.wq module
+queen.wq module
 ------------------
 
-.. automodule:: qing.wq
+.. automodule:: queen.wq
     :members:
     :undoc-members:
     :show-inheritance:
@@ -47,7 +47,7 @@ qing.wq module
 Module contents
 ---------------
 
-.. automodule:: qing
+.. automodule:: queen
     :members:
     :undoc-members:
     :show-inheritance:

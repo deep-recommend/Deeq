@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Queen Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ Circuit.run_with_ibmq or Circuit.run(backend="ibmq", ...).
 
 Args:
     qiskit_backend (Backend, optional): Backend of qiskit.
-        If this argument is omitted, Qing uses Qiskit Aer's qasm_simulator.
+        If this argument is omitted, Queen uses Qiskit Aer's qasm_simulator.
     shots (int, optional): The number of shots.
     returns (str, optional): Choose from followings. Default is "shots".
         "shots": Default behavior. Returns the measurement result.

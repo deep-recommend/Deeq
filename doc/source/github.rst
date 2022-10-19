@@ -1,6 +1,6 @@
 GitHub
 ======
 
-Qing's GitHub repository is here:
+Queen's GitHub repository is here:
 
-https://github.com/Qing/Qing
+https://github.com/Queen/Queen

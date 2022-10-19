@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Queen Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -157,10 +157,10 @@ def circuit_to_unitary(circ: 'Circuit', *runargs, **runkwargs) -> np.ndarray:
     """Make circuit to unitary. This function is experimental feature and
     may changed or deleted in the future."""
     warnings.warn(
-        "qing.util.circuit_to_unitary is moved to " +
-        "qing.circuit_funcs.circuit_to_unitary.circuit_to_unitary.",
+        "queen.util.circuit_to_unitary is moved to " +
+        "queen.circuit_funcs.circuit_to_unitary.circuit_to_unitary.",
         DeprecationWarning)
-    from qing.circuit_funcs.circuit_to_unitary import circuit_to_unitary as f
+    from queen.circuit_funcs.circuit_to_unitary import circuit_to_unitary as f
     return f(circ, *runargs, **runkwargs)
 
 

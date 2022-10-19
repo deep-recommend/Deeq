@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 
-from qing import Circuit, circuitmacro
+from queen import Circuit, circuitmacro
 
 
 @circuitmacro

@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Queen Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 from collections import Counter
 import pytest
-from qing.utils import to_inttuple
+from queen.utils import to_inttuple
 
 @pytest.mark.parametrize('arg, expect', [
     ("01011", (0, 1, 0, 1, 1)),

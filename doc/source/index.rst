@@ -1,12 +1,12 @@
-.. Qing documentation master file, created by
+.. Queen documentation master file, created by
    sphinx-quickstart on Tue Sep 25 12:29:15 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Qing's documentation!
+Welcome to Queen's documentation!
 ===================================
 
-Qing is an open source Python framework for quantum gate simulator.
+Queen is an open source Python framework for quantum gate simulator.
 
 .. toctree::
    :maxdepth: 2

@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, MDR Inc.
-# This file is distributed under the same license as the Qing package.
+# This file is distributed under the same license as the Queen package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Qing \n"
+"Project-Id-Version: Queen \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 16:11+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../source/index.rst:7
-msgid "Welcome to Qing's documentation!"
-msgstr "Qingのドキュメントへようこそ!"
+msgid "Welcome to Queen's documentation!"
+msgstr "Queenのドキュメントへようこそ!"
 
 #: ../../source/index.rst:9
-msgid "Qing is an open source Python framework for quantum gate simulator."
-msgstr "Qingは、量子ゲートシミュレータのためのPythonで書かれたオープンソースフレームワークです。"
+msgid "Queen is an open source Python framework for quantum gate simulator."
+msgstr "Queenは、量子ゲートシミュレータのためのPythonで書かれたオープンソースフレームワークです。"
 
 #: ../../source/index.rst:11
 msgid "Contents:"

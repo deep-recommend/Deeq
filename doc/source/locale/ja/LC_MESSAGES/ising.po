@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, MDR Inc.
-# This file is distributed under the same license as the Qing package.
+# This file is distributed under the same license as the Queen package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Qing \n"
+"Project-Id-Version: Queen \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-20 00:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -22,13 +22,13 @@ msgstr "Ising/QUBO 問題"
 
 #: ../../source/ising.rst:4
 msgid ""
-"Qing wq module is a module for solbing Ising and Quadratic "
+"Queen wq module is a module for solbing Ising and Quadratic "
 "Unconstrained Binary Optimization (QUBO) problems. It includes local "
 "solver for Simulated Annealing (SA) and Simulated Quantum Annealing "
 "(SQA). You can also submit problems to D-Wave cloud machine using wq "
 "module."
 msgstr ""
-"Qing wq モジュールはイジング問題と制約なし二次形式二値変数最適化(QUBO)問題のためのモジュールです。ローカル環境で動作するシミュレーテッドアニーリング(SA)とシミュレーテッド量子アニーリング(SQA)のソルバーが組み込まれています。wq"
+"Queen wq モジュールはイジング問題と制約なし二次形式二値変数最適化(QUBO)問題のためのモジュールです。ローカル環境で動作するシミュレーテッドアニーリング(SA)とシミュレーテッド量子アニーリング(SQA)のソルバーが組み込まれています。wq"
 " モジュールを使用してD-Waveクラウドマシンに問題をサブミットすることも可能です。"
 
 #: ../../source/ising.rst:9

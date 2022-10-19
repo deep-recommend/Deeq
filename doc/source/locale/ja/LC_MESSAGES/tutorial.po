@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, MDR Inc.
-# This file is distributed under the same license as the Qing package.
+# This file is distributed under the same license as the Queen package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Qing \n"
+"Project-Id-Version: Queen \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-13 12:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -29,7 +29,7 @@ msgid "English"
 msgstr "英語 (English)"
 
 #: ../../source/tutorial.rst:8
-msgid "https://github.com/Qing/Qing-tutorials"
+msgid "https://github.com/Queen/Queen-tutorials"
 msgstr ""
 
 #: ../../source/tutorial.rst:10
@@ -37,12 +37,12 @@ msgid "Japanese"
 msgstr "日本語"
 
 #: ../../source/tutorial.rst:12
-msgid "https://github.com/Qing/Qing-tutorials/tree/master/tutorial-ja"
+msgid "https://github.com/Queen/Queen-tutorials/tree/master/tutorial-ja"
 msgstr ""
 
-#~ msgid "https://github.com/mdrft/Qing/blob/master/tutorial_en/README.md"
+#~ msgid "https://github.com/mdrft/Queen/blob/master/tutorial_en/README.md"
 #~ msgstr ""
 
-#~ msgid "https://github.com/mdrft/Qing/blob/master/tutorial_ja/README.md"
+#~ msgid "https://github.com/mdrft/Queen/blob/master/tutorial_ja/README.md"
 #~ msgstr ""
 
