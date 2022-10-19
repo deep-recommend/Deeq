@@ -1,6 +1,3 @@
-from . import qaoa
-from . import qml
-from . import qnn
-from ._version import __version__
+from .main import QAOA, QML, QNN 
 
-__all__ = ["qaoa", "qml", "qnn"]
+__all__ = ["QAOA", "QML", "QNN"]
