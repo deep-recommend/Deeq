@@ -1,4 +1,4 @@
-from queen import pauli, vqe, QueenGlobalSetting
+from qing import pauli, vqe, QingGlobalSetting
 
 def maxcut_qaoa(n_step, edges, minimizer=None, sampler=None, verbose=True):
     """Setup QAOA.
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     # use qgate as backend.
     simargs['backend'] = 'qgate'
     # or global set qgate as backend.
-    # QueenGlobalSetting.set_default_backend("qgate")
+    # QingGlobalSetting.set_default_backend("qgate")
     
     # runtime selection.
     #  'py' : python runtime, 'cpu' : cpu runtime, 'cuda' : cuda runtime.
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     
     # sampling method selection
     #  'qgate' : qgate parallelized sampling,
-    #  'queen':  sampling algorithm is compatible with queen.
+    #  'qing':  sampling algorithm is compatible with qing.
     # default is 'qgate'
     #
     # simargs['sampling'] = 'qgate'

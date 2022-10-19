@@ -1,7 +1,7 @@
 Ising/QUBO problem
 ==================
 
-Queen wq module is a module for solbing Ising and Quadratic Unconstrained Binary Optimization (QUBO) problems. 
+Qing wq module is a module for solbing Ising and Quadratic Unconstrained Binary Optimization (QUBO) problems. 
 It includes local solver for Simulated Annealing (SA) and Simulated Quantum Annealing (SQA).
 You can also submit problems to D-Wave cloud machine using wq module.
 
@@ -153,7 +153,7 @@ Use Simulated Annealing of wq module to solve this problem:
 
 .. code-block:: python
 
-    import queen.wq as wq
+    import qing.wq as wq
     a = wq.Opt()
     a.qubo = [[-3,2,2], [0,-3,2], [0,0,-3]]
     answer = a.sa() 

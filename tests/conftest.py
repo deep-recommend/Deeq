@@ -1,4 +1,4 @@
-# Copyright 2019 The Queen Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from queen import QueenGlobalSetting
+from qing import QingGlobalSetting
 
-DEFAULT_BACKEND = QueenGlobalSetting.get_default_backend_name()
+DEFAULT_BACKEND = QingGlobalSetting.get_default_backend_name()
 
 def pytest_addoption(parser):
     parser.addoption('--add-backend', default=[DEFAULT_BACKEND], action='append')

@@ -1,6 +1,6 @@
-Introducing Queen
+Introducing Qing
 ===================
 
-Queen is an open source Python framework for quantum gate simulator. 
+Qing is an open source Python framework for quantum gate simulator. 
 
 Quadratic Unconstrained Binary Optimization (QUBO) simulator is also integrated as wq (come from the library for Ising/QUBO problem: Wlidqat) module.

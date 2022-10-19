@@ -1,4 +1,4 @@
-# Copyright 2019 The Queen Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 import sympy
 import pytest
 
-from queen import Circuit
+from qing import Circuit
 
 p1, p2, p3, p4, p5 = sympy.symbols('p1 p2 p3 p4 p5')
 

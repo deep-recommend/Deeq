@@ -14,15 +14,15 @@ Install
 
 .. code-block:: bash
 
-    $ git clone https://github.com/Queen/Queen
-    $ cd queen
+    $ git clone https://github.com/Qing/Qing
+    $ cd qing
     $ pip3 install -e .
 
 or
 
 .. code-block:: bash
 
-    $ pip3 install queen
+    $ pip3 install qing
 
 
 Basics
@@ -33,7 +33,7 @@ Circuit
 
 .. code-block:: python
 
-    from queen import Circuit
+    from qing import Circuit
     import math
 
     #number of qubit is not specified
@@ -98,7 +98,7 @@ Hamiltonian
 
 .. code-block:: python
 
-    from queen.pauli import *
+    from qing.pauli import *
 
     hamiltonian1 = (1.23 * Z[0] + 4.56 * X[1] * Z[2]) ** 2
     hamiltonian2 = (2.46 * Y[0] + 5.55 * Z[1] * X[2] * X[1]) ** 2
@@ -117,8 +117,8 @@ VQE
 
 .. code-block:: python
 
-    from queen import vqe
-    from queen.pauli import qubo_bit as q
+    from qing import vqe
+    from qing.pauli import qubo_bit as q
 
     hamiltonian = -3*q(0)-3*q(1)-3*q(2)-3*q(3)-3*q(4)+2*q(0)*q(1)+2*q(0)*q(2)+2*q(0)*q(3)+2*q(0)*q(4)+2*q(1)*q(2)+2*q(1)*q(3)+2*q(1)*q(4)+2*q(2)*q(3)+2*q(2)*q(4)+2*q(3)*q(4)
     step = 2
@@ -137,22 +137,22 @@ Ising Model
 
 .. code-block:: python
 
-    import queen.wq as wq
+    import qing.wq as wq
     a = wq.Opt()
     a.qubo = [[4,-4,-4],[0,4,-4],[0,0,4]]
     a.sa() #=> [1, 1, 1]
     print(a.E[-1]) #=>[0.0]
 
-Queen to Qiskit
+Qing to Qiskit
 -----------------
 
 .. code-block:: python
 
     qiskit.register(APItoken)
-    sampler = queen.vqe.get_qiskit_sampler(backend="backend name")
-    result = queen.vqe.Vqe(QaoaAnsatz(...), sampler=sampler).run(verbose=True)
+    sampler = qing.vqe.get_qiskit_sampler(backend="backend name")
+    result = qing.vqe.Vqe(QaoaAnsatz(...), sampler=sampler).run(verbose=True)
 
-Queen to QASM
+Qing to QASM
 ---------------
 
 .. code-block:: python
@@ -173,7 +173,7 @@ Example
 
 .. code-block:: python
 
-    from queen import Circuit
+    from qing import Circuit
     c = Circuit().h[:2].cz[0,1].h[:].x[:].cz[0,1].x[:].h[:].m[:]
     c.run()
     print(c.last_result()) # => (1, 1)
@@ -183,7 +183,7 @@ Maxcut QAOA
 
 .. code-block:: python
 
-    from queen import vqe, pauli
+    from qing import vqe, pauli
     edges = [(0, 1), (1, 2), (2, 3), (3, 0), (1, 3), (0, 2), (4, 0), (4, 3)]
     ansatz = vqe.QaoaAnsatz(sum([pauli.Z(i) * pauli.Z(j) for i, j in edges]), 1)
     result = vqe.Vqe(ansatz).run()
@@ -199,7 +199,7 @@ Optimization
 
 .. code-block:: python
 
-    import queen.wq as wq
+    import qing.wq as wq
     c = wq.Opt().add([[1,1],[1,1]]).add("(q0+q1)^2")
 
     #qaoa
@@ -216,7 +216,7 @@ SA Annealing
 
 .. code-block:: python
 
-    import queen.wq as wq
+    import qing.wq as wq
     a = wq.Opt()
     a.qubo = wq.sel(3,1) #creating QUBO matrix
     result = a.sa(shots=100,sampler="fast")
@@ -275,7 +275,7 @@ Connection to D-Wave cloud
 
 .. code-block:: python
 
-    import queen.wq as wq
+    import qing.wq as wq
     a = wq.Opt()
     a.dwavetoken = "your token here"
     a.qubo = [[0,0,0,0,-4],[0,2,0,0,-4],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,4]] 

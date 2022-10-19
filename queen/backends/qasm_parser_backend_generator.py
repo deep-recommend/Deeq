@@ -1,4 +1,4 @@
-# Copyright 2019 The Queen Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ class QasmParsableBackend(Backend):
 def generate_backend(qasm_runner):
     """Generate a wrapper of QasmParsableBackend from qasm_runner.
 
-    Due to Queen's backend specifications, normally, cannot give arguments to
+    Due to Qing's backend specifications, normally, cannot give arguments to
     QasmParsableBackend's constructor.
     This function wrap the class for specify `qasm_runner` to QasmParsableBackend's constructor.
 

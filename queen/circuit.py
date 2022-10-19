@@ -1,4 +1,4 @@
-# Copyright 2019 The Queen Developers
+# Copyright 2019 The Qing Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -268,8 +268,8 @@ class _GateWrapper(CircuitOperation[Circuit]):
         return self.op_type.lowername + args_str
 
 
-class QueenGlobalSetting:
-    """Setting for Queen."""
+class QingGlobalSetting:
+    """Setting for Qing."""
     @staticmethod
     def register_macro(name: str,
                        func: Callable,
@@ -413,7 +413,7 @@ class QueenGlobalSetting:
         warnings.warn(
             "remove_backend is deprecated. `unregister_backend` is recommended.",
             DeprecationWarning)
-        QueenGlobalSetting.unregister_backend(name)
+        QingGlobalSetting.unregister_backend(name)
 
     @staticmethod
     def set_default_backend(name):

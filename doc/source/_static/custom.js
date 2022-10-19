@@ -2,7 +2,7 @@
   document.write(
     '<div id="lang-switcher"><a id="lang-en">English</a><a id="lang-ja">Japanese</a></div>'
   );
-  var root = "https://queen.readthedocs.io";
+  var root = "https://qing.readthedocs.io";
   var langen = document.getElementById("lang-en");
   var langja = document.getElementById("lang-ja");
   var path = location.pathname;

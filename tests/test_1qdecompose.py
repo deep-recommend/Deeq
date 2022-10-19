@@ -6,10 +6,10 @@ from typing import Callable, List
 import pytest
 import numpy as np
 
-from queen import Circuit
-from queen.gate import OneQubitGate, Mat1Gate, HGate, UGate, PhaseGate, RXGate, RYGate, RZGate
-from queen.circuit_funcs import circuit_to_unitary
-from queen.backends.onequbitgate_decomposer import ryrz_decomposer, u_decomposer
+from qing import Circuit
+from qing.gate import OneQubitGate, Mat1Gate, HGate, UGate, PhaseGate, RXGate, RYGate, RZGate
+from qing.circuit_funcs import circuit_to_unitary
+from qing.backends.onequbitgate_decomposer import ryrz_decomposer, u_decomposer
 
 Decomposer = Callable[[OneQubitGate], List[OneQubitGate]]
 

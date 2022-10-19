@@ -4,7 +4,7 @@ import typing
 from typing import Generic, TypeVar, Union
 
 if typing.TYPE_CHECKING:
-    from queen import Circuit
+    from qing import Circuit
 
 T = TypeVar('T')
 Targets = Union[int, slice, tuple]
