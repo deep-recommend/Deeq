@@ -37,10 +37,6 @@ from deeq import QAOA, QML, QNN
 ### Method Chain
 
 ```python
-Circuit().h[0].x[0].z[0]
-
-c = Circuit().h[0]
-c.x[0].z[0]
 ```
 
 ### Document
