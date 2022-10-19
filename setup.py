@@ -3,21 +3,21 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-with open("qing/_version.py", "r", encoding="utf-8") as f:
+with open("deeq/_version.py", "r", encoding="utf-8") as f:
     exec(f.read())
 
 with open("requirements.txt", "r", encoding="utf-8") as f:
     install_requires = list(map(str.strip, f))
 
 setuptools.setup(
-    name = "qing",
+    name = "deeq",
     version=__version__,
-    author="The Qing Developers",
-    author_email="info@qing.com",
+    author="The Deeq Developers",
+    author_email="info@deeq.com",
     description="Quantum Computer Library for Everyone",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Qing/Qing",
+    url="https://github.com/Deeq/Deeq",
     license="Apache 2",
     packages=setuptools.find_packages(),
     install_requires=install_requires,

@@ -1,5 +1,5 @@
-from qing import Circuit, pauli, vqe
-from qing.pauli import qubo_bit as q
+from deeq import Circuit, pauli, vqe
+from deeq.pauli import qubo_bit as q
 
 def factoring_qaoa(n_step, num, minimizer=None, sampler=None, verbose=True):
     """Do the Number partition QAOA.

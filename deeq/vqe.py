@@ -287,7 +287,7 @@ def get_qiskit_sampler(backend, **execute_kwargs):
         import qiskit
     except ImportError:
         raise ImportError(
-            "qing.vqe.get_qiskit_sampler() requires qiskit. Please install before call this function."
+            "deeq.vqe.get_qiskit_sampler() requires qiskit. Please install before call this function."
         )
     try:
         shots = execute_kwargs['shots']

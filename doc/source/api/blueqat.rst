@@ -1,45 +1,45 @@
-qing package
+deeq package
 ===============
 
 Submodules
 ----------
 
-qing.circuit module
+deeq.circuit module
 ----------------------
 
-.. automodule:: qing.circuit
+.. automodule:: deeq.circuit
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.gate module
+deeq.gate module
 -------------------
 
-.. automodule:: qing.gate
+.. automodule:: deeq.gate
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.pauli module
+deeq.pauli module
 --------------------
 
-.. automodule:: qing.pauli
+.. automodule:: deeq.pauli
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.vqe module
+deeq.vqe module
 ------------------
 
-.. automodule:: qing.vqe
+.. automodule:: deeq.vqe
     :members:
     :undoc-members:
     :show-inheritance:
 
-qing.wq module
+deeq.wq module
 ------------------
 
-.. automodule:: qing.wq
+.. automodule:: deeq.wq
     :members:
     :undoc-members:
     :show-inheritance:
@@ -47,7 +47,7 @@ qing.wq module
 Module contents
 ---------------
 
-.. automodule:: qing
+.. automodule:: deeq
     :members:
     :undoc-members:
     :show-inheritance:

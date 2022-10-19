@@ -7,10 +7,10 @@ from collections import Counter
 import pytest
 import numpy as np
 
-from qing import Circuit
-from qing.circuit_funcs import circuit_to_unitary
+from deeq import Circuit
+from deeq.circuit_funcs import circuit_to_unitary
 
-import qing.macros
+import deeq.macros
 
 PAULI_X = np.array([[0, 1], [1, 0]])
 ANGLES = [0.0, pi / 4, pi / 2, pi, -pi / 2, 2 * pi, -7 * pi]

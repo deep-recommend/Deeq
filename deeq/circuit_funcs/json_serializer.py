@@ -1,13 +1,13 @@
 """Defines JSON serializer and deserializer."""
 import typing
-from qing import Circuit
+from deeq import Circuit
 
 from ..gateset import create
 from .flatten import flatten
 
-from qing.gate import Measurement, Operation
+from deeq.gate import Measurement, Operation
 
-SCHEMA_NAME = 'qing-circuit'
+SCHEMA_NAME = 'deeq-circuit'
 AVAILABLE_SCHEMA_VERSIONS = ["1", "2"]
 LATEST_SCHEMA_VERSION = "2"
 

@@ -1,6 +1,6 @@
 import numpy as np
 
-from qing import Circuit
+from deeq import Circuit
 
 def circuit_to_unitary(circ: Circuit, *runargs, **runkwargs) -> np.ndarray:
     """Make circuit to unitary. This function is experimental feature and

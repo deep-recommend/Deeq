@@ -1,14 +1,14 @@
-# Qing
+# Deeq
 
 Quantum Computing SDK
 
 ### Version
 
-[![Version](https://badge.fury.io/py/qing.svg)](https://badge.fury.io/py/qing)
+[![Version](https://badge.fury.io/py/deeq.svg)](https://badge.fury.io/py/deeq)
 
 ### Tutorial
 
-https://github.com/Qing/Qing-tutorials
+https://github.com/Deeq/Deeq-tutorials
 
 ### Notice
 
@@ -17,21 +17,21 @@ The back end has been changed to tensor network. The previous backend environmen
 ### Install
 
 ```
-git clone https://github.com/Qing/Qing
-cd Qing
+git clone https://github.com/Deeq/Deeq
+cd Deeq
 pip3 install -e .
 ```
 
 or
 
 ```
-pip3 install qing
+pip3 install deeq
 ```
 
 ### Circuit
 
 ```python
-from qing import Circuit
+from deeq import Circuit
 import math
 
 c = Circuit()
@@ -66,7 +66,7 @@ Circuit().rz(math.pi / 4)[0]
 ### Run
 
 ```python
-from qing import Circuit
+from deeq import Circuit
 Circuit(50).h[:].run()
 ```
 
@@ -86,13 +86,13 @@ Circuit(4).h[:].run(amplitude="0101")
 ### Expectation value of hamiltonian
 
 ```python
-from qing.pauli import Z
+from deeq.pauli import Z
 hamiltonian = 1*Z[0]+1*Z[1]
 Circuit(4).x[:].run(hamiltonian=hamiltonian)
 # => -2.0
 ```
 
-### Qing to QASM
+### Deeq to QASM
 
 ```python
 Circuit().h[0].to_qasm()
@@ -101,7 +101,7 @@ Circuit().h[0].to_qasm()
 ### Hamiltonian
 
 ```python
-from qing.pauli import *
+from deeq.pauli import *
 
 hamiltonian1 = (1.23 * Z[0] + 4.56 * X[1] * Z[2]) ** 2
 hamiltonian2 = (2.46 * Y[0] + 5.55 * Z[1] * X[2] * X[1]) ** 2
@@ -119,7 +119,7 @@ print(hamiltonian)
 ### QUBO Hamiltonian
 
 ```python
-from qing.pauli import qubo_bit as q
+from deeq.pauli import qubo_bit as q
 
 hamiltonian = -3*q(0)-3*q(1)-3*q(2)-3*q(3)-3*q(4)+2*q(0)*q(1)+2*q(0)*q(2)+2*q(0)*q(3)+2*q(0)*q(4)
 print(hamiltonian)
@@ -141,10 +141,10 @@ print(time_evolution)
 ### QAOA
 
 ```python
-from qing import Circuit
-from qing.utils import qaoa
-from qing.pauli import qubo_bit as q
-from qing.pauli import X,Y,Z,I
+from deeq import Circuit
+from deeq.utils import qaoa
+from deeq.pauli import qubo_bit as q
+from deeq.pauli import X,Y,Z,I
 
 hamiltonian = q(0)-q(1)
 step = 1
@@ -156,9 +156,9 @@ result.circuit.run(shots=100)
 ### Circuit Drawing Backend
 
 ```python
-from qing import vqe
-from qing.pauli import *
-from qing.pauli import qubo_bit as q
+from deeq import vqe
+from deeq.pauli import *
+from deeq.pauli import qubo_bit as q
 
 hamiltonian = Z[0]-3*Z[1]+2*Z[0]*Z[1]+3*Z[2]*Z[3]+Z[4]
 step = 8
@@ -169,14 +169,14 @@ result.circuit.run(backend='draw')
 
 ### Document
 
-https://qing.readthedocs.io/en/latest/
+https://deeq.readthedocs.io/en/latest/
 
 ### Contributors
 
-[Contributors](https://github.com/Qing/Qing/graphs/contributors)
+[Contributors](https://github.com/Deeq/Deeq/graphs/contributors)
 
 ### Disclaimer
 
 Copyright 2022 The DeepRecommend Developers.
 
-# Qing
+# Deeq

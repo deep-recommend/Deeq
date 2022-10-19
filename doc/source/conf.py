@@ -20,9 +20,9 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Qing'
-copyright = '2018, The Qing Developers'
-author = 'The Qing Developers'
+project = 'Deeq'
+copyright = '2018, The Deeq Developers'
+author = 'The Deeq Developers'
 
 # The short X.Y version
 version = ''
@@ -105,7 +105,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Qingdoc'
+htmlhelp_basename = 'Deeqdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -132,7 +132,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Qing.tex', 'Qing Documentation',
+    (master_doc, 'Deeq.tex', 'Deeq Documentation',
      'MDR Inc.', 'manual'),
 ]
 
@@ -142,7 +142,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'qing', 'Qing Documentation',
+    (master_doc, 'deeq', 'Deeq Documentation',
      [author], 1)
 ]
 
@@ -153,8 +153,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Qing', 'Qing Documentation',
-     author, 'Qing', 'One line description of project.',
+    (master_doc, 'Deeq', 'Deeq Documentation',
+     author, 'Deeq', 'One line description of project.',
      'Miscellaneous'),
 ]
 

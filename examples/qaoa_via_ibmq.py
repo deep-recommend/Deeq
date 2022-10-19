@@ -1,4 +1,4 @@
-from qing import pauli, vqe
+from deeq import pauli, vqe
 from qiskit import Aer
 
 def maxcut_qaoa(n_step, edges, minimizer=None, sampler=None, verbose=True):

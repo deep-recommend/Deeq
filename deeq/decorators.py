@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Deeq Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 from keyword import iskeyword
 from typing import Callable, Union
 
-from .circuit import QingGlobalSetting
+from .circuit import DeeqGlobalSetting
 
 
 def circuitmacro(func: Union[Callable, str, None] = None,
@@ -34,7 +34,7 @@ def circuitmacro(func: Union[Callable, str, None] = None,
 
         def egg(c):
             ...
-        QingGlobalSetting.register_macro('egg', egg, allow_overwrite=True)
+        DeeqGlobalSetting.register_macro('egg', egg, allow_overwrite=True)
 
 
     Case 2: with name:
@@ -47,7 +47,7 @@ def circuitmacro(func: Union[Callable, str, None] = None,
 
         def egg(c):
             ...
-        QingGlobalSetting.register_macro('bacon', egg, allow_overwrite=True)
+        DeeqGlobalSetting.register_macro('bacon', egg, allow_overwrite=True)
 
     Case 3: with allow_overwrite keyword argument
 
@@ -61,7 +61,7 @@ def circuitmacro(func: Union[Callable, str, None] = None,
         def bacon(c):
             ...
 
-    call QingGlobalSetting.register_macro with allow_overwrite=False.
+    call DeeqGlobalSetting.register_macro with allow_overwrite=False.
 
     Please note that `allow_overwrite=True` is default behavior.
     It is convenient for interactive environment likes Jupyter Notebook.
@@ -73,14 +73,14 @@ def circuitmacro(func: Union[Callable, str, None] = None,
         if not name.isidentifier() or iskeyword(name):
             raise ValueError(
                 f'Function name {name} is not a valid macro name. ')
-        QingGlobalSetting.register_macro(name, func, allow_overwrite)
+        DeeqGlobalSetting.register_macro(name, func, allow_overwrite)
         return func
     if isinstance(func, str):
         # @def_macro(name) or @def_macro(name, allow_overwrite) pattern.
         name = func
 
         def _wrapper1(func):
-            QingGlobalSetting.register_macro(name, func, allow_overwrite)
+            DeeqGlobalSetting.register_macro(name, func, allow_overwrite)
             return func
 
         return _wrapper1
@@ -91,7 +91,7 @@ def circuitmacro(func: Union[Callable, str, None] = None,
             if not name.isidentifier() or iskeyword(name):
                 raise ValueError(
                     f'Function name {name} is not a valid macro name. ')
-            QingGlobalSetting.register_macro(name, func, allow_overwrite)
+            DeeqGlobalSetting.register_macro(name, func, allow_overwrite)
             return func
 
         return _wrapper2

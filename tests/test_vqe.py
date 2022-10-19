@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Deeq Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
 
 import types
 import pytest
-from qing import (
+from deeq import (
     Circuit,
 )
-from qing.vqe import (
+from deeq.vqe import (
     VqeResult,
     non_sampling_sampler,
     expect,

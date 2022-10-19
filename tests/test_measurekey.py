@@ -1,4 +1,4 @@
-from qing import Circuit
+from deeq import Circuit
 
 def test_key0():
     assert Circuit().m(key="test")[0].run(shots=10, returns="samples") == [{"test": [0]} for _ in range(10)]

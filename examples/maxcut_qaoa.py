@@ -1,4 +1,4 @@
-from qing import pauli, vqe
+from deeq import pauli, vqe
 
 def maxcut_qaoa(n_step, edges, minimizer=None, sampler=None, verbose=True):
     """Setup QAOA.

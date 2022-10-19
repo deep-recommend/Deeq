@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2018, MDR Inc.
-# This file is distributed under the same license as the Qing package.
+# This file is distributed under the same license as the Deeq package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Qing \n"
+"Project-Id-Version: Deeq \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-20 00:23+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -99,12 +99,12 @@ msgid "Ising Model"
 msgstr ""
 
 #: ../../source/getting_started.rst:147
-msgid "Qing to Qiskit"
-msgstr "QingからQiskit"
+msgid "Deeq to Qiskit"
+msgstr "DeeqからQiskit"
 
 #: ../../source/getting_started.rst:156
-msgid "Qing to QASM"
-msgstr "QingからQASM"
+msgid "Deeq to QASM"
+msgstr "DeeqからQASM"
 
 #: ../../source/getting_started.rst:169
 msgid "Example"

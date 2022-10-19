@@ -1,4 +1,4 @@
-# Copyright 2019 The Qing Developers
+# Copyright 2019 The Deeq Developers
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -268,8 +268,8 @@ class _GateWrapper(CircuitOperation[Circuit]):
         return self.op_type.lowername + args_str
 
 
-class QingGlobalSetting:
-    """Setting for Qing."""
+class DeeqGlobalSetting:
+    """Setting for Deeq."""
     @staticmethod
     def register_macro(name: str,
                        func: Callable,
@@ -413,7 +413,7 @@ class QingGlobalSetting:
         warnings.warn(
             "remove_backend is deprecated. `unregister_backend` is recommended.",
             DeprecationWarning)
-        QingGlobalSetting.unregister_backend(name)
+        DeeqGlobalSetting.unregister_backend(name)
 
     @staticmethod
     def set_default_backend(name):
