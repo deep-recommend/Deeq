@@ -1,3 +1,3 @@
-from .main import QAOA, QML, QNN 
+from .main import QML, QNN 
 
-__all__ = ["QAOA", "QML", "QNN"]
+__all__ = ["QML", "QNN"]
